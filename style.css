@@ -1,0 +1,127 @@
+/* Global section starts from here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* Global section ends here */
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+/* left box starter */
+#left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    
+}
+#lnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: dotted;
+    font-weight: 500;
+    color: black;
+    font-size: 15px;
+
+}
+#lnavr i{
+    color: black;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr a:hover{
+    color:aquamarine;
+}
+/* text haru center garne tarika */
+#left #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#text{
+    font-size: 40px;
+    font-weight: 400;
+}
+#text p{
+    text-decoration: none;
+    opacity: .6;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#text a{
+    color: black;
+    border-bottom: 1px solid black;
+
+}
+#text h1:hover{
+    color: aqua;
+}
+
+/* Left box end */
+
+/* Right box starter */
+#right{
+    height: 100%;
+    width: 60%;
+    background-color:green;
+}
+
+#rtop{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(168, 171, 172);
+    
+}
+
+#rtleft{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1574676130659-a1d0dd4791fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHBsYW50fGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: cover;
+}
+/* #rtright{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1675314800274-d84f6a902203?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+} */
+#rbuttom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1421217336522-861978fdf33a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+/* Right box ends here */
+
+/* Making website responsive */
+@media(max-width:700px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
